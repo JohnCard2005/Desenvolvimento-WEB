@@ -1,0 +1,183 @@
+:root {
+    --cor-primaria: #ff0000;
+    --cor-primaria-escura: #300000;
+    --cor-destaque: #fa5555;
+    --cor-fundo: #f3f4f6;
+    --cor-branca: #ffffff;
+    --cor-borda: #e5e7eb;
+    --cor-texto: #000000;
+    --sombra-padrao: #d1d5db;
+    --raio-borda: 14px;
+    --largura-maxima: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.imagem-centralizada {
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(
+        180deg,
+        var(--cor-primaria),
+        var(--cor-primaria-escura)
+    );
+    color: var(--cor-branca);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Barra de abas no estilo Limitless TCG */
+.abas {
+    background-color: var(--cor-branca);
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 10px 10px 0;
+    box-shadow: 0 2px 4px var(--sombra-padrao);
+}
+
+.abas a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.abas a:hover {
+    background-color: var(--cor-fundo);
+}
+
+main {
+    max-width: var(--largura-maxima);
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: var(--cor-branca);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-borda);
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px var(--sombra-padrao);
+}
+
+section h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--cor-borda);
+}
+
+/* Barra de filtro acima da tabela, tipo "Rank by / Format" */
+.barra-filtro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.barra-filtro select {
+    padding: 6px 10px;
+    border: 1px solid var(--sombra-padrao);
+    border-radius: 6px;
+}
+
+.barra-filtro .formato {
+    margin-left: auto;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 2px solid var(--cor-texto);
+}
+
+tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--cor-fundo);
+}
+
+tbody tr:hover {
+    background-color: #ffe5e5;
+}
+
+td.rank {
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+table img {
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+form label {
+    display: inline-block;
+    width: 140px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 6px;
+    border: 1px solid var(--sombra-padrao);
+    border-radius: 6px;
+}
+
+form button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--raio-borda);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor-destaque);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--cor-branca);
+    background-color: var(--cor-primaria-escura);
+}
