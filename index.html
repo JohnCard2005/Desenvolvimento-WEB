@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga Pokemon TCG - Três Lagoas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+        <img src="img/hollow.png" alt="Logo Liga Pokémon TCG" width="110">
+        <h1>Campeonato Pokemon TCG - Três Lagoas</h1>
+        <p>Desafio da Vó #1</p>
+    </header>
+
+    <nav class="abas">
+        <a href="#sobre">Sobre</a>
+        <a href="#decks">Decks</a>
+        <a href="#Campeoes">Campeões</a>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre o torneio</h2>
+            <img src="img/pokemon-tcg.png" alt="Cartas de Pokémon TCG" width="500" class="imagem-centralizada">
+            <br>
+            <br>
+            <a href="https://www.pokemon.com/br/pokemon-tcg/">Site Oficial Pokémon TCG</a>
+            <p>O torneio reúne jogadores da região para competir com seus decks de Pokémon TCG, trocar experiências e evoluir suas estratégias a cada rodada.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>O que você precisa saber</h2>
+            <ul>
+                <li>Regras básicas do Pokémon TCG</li>
+                <li>Montagem de deck</li>
+                <li>Estratégias de batalha</li>
+            </ul>
+        </section>
+
+        <section id="decks">
+            <h2>Deck em Destaque</h2>
+            <article>
+                <h3>Alakazam + Toucannon</h3>
+                <p>Deck single prize com alto dano e consistência</p>
+                <img src="img/alakazam.png" alt="Alakazam" width="75">
+                <img src="img/toucannon.webp" alt="Toucannon" width="85">
+            </article>
+        </section>
+
+        <section id="tabela-decks">
+            <h2>Decks mais jogados nos torneios</h2>
+
+            <div class="barra-filtro">
+                <label for="ordenar">Ordenar por:</label>
+                <select id="ordenar" name="ordenar">
+                    <option value="vitorias">Vitórias</option>
+                    <option value="nome">Nome</option>
+                </select>
+                <span class="formato">Formato: Padrão</span>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Deck</th>
+                        <th>Tipo</th>
+                        <th>Vitórias</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="rank">1</td>
+                        <td><img src="img/lucario.png" alt="Mega Lucario" width="30"> Mega Lucario Ex</td>
+                        <td>Lutador</td>
+                        <td>8</td>
+                        <td>23,07%</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">2</td>
+                        <td><img src="img/alakazam.png" alt="Alakazam" width="30"> Alakazam</td>
+                        <td>Psíquico</td>
+                        <td>6</td>
+                        <td>15,3%</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">3</td>
+                        <td><img src="img/dragapult.png" alt="Dragapult" width="30"> Dragapult ex</td>
+                        <td>Dragão</td>
+                        <td>8</td>
+                        <td>15,3%</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">4</td>
+                        <td><img src="img/mewtwo.png" alt="Mewtwo" width="40"> Mewtwo ex da Equipe Rocket</td>
+                        <td>Psíquico</td>
+                        <td>5</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">5</td>
+                        <td><img src="img/charizard-x.png" alt="Charizard-x" width="40"> Mega Charizard ex</td>
+                        <td>Fogo</td>
+                        <td>6</td>
+                        <td>7,69%</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="Campeoes">
+            <h2>Campeões</h2>
+            <img src="img/winners.png" alt="winners" width="500" class="imagem-centralizada">
+            <br>
+            <br>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 João Cardoso.</p>
+    </footer>
+</body>
+</html>
