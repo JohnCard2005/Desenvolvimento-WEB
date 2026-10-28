@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo do Banco Master" class="logo">
+        <h1>Banco Master</h1>
+    </header>
+    <main>
+        <p>Bem-vindo ao Banco Master! Aqui você pode gerenciar suas finanças de forma simples e eficiente.</p>
+<div class="caixa">Saldo Bancario
+    <p>Seu saldo bancário é de: R$ <span class="dinheiro" id="saldo"></span></p>
+</div>
+
+<div class="caixa"> Operações Financeiras
+    <h1>Depositar</h1>
+    <input class="box" type="number" id="valor" placeholder="Valor do depósito">
+    <button class="btn" onclick="depositar()">Depositar</button>
+
+    <h1>Sacar</h1>
+    <input class="box" type="number" id="valorsaque" placeholder="Valor do saque">
+    <button class="btn" onclick="sacar()">Sacar</button>
+</div>
+
+    <div> 
+        <h1>Extrato</h1>
+        <p id="extrato"></p>
+    </div>
+
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

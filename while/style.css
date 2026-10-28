@@ -1,0 +1,30 @@
+body{
+    font-size: 16px;
+    color: black;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+.caixa {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #e3f704;
+}
+
+body {
+    background-color: #525252;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dinheiro{
+    color: green;
+    font-weight: bold;
+}
