@@ -1,0 +1,273 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #10101c, #191932, #111827);
+    color: #ffffff;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 460px;
+    animation: aparecer 0.8s ease;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icone {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+
+    background: linear-gradient(135deg, #7657ff, #a855f7);
+    border-radius: 16px;
+
+    font-size: 28px;
+    margin-bottom: 15px;
+
+    box-shadow: 0 0 25px #7657ff55;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #a5a5c0;
+    font-size: 14px;
+}
+
+/* Cartão */
+.card {
+    background: #202035;
+    border: 1px solid #383853;
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 15px 40px #00000050;
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 45px #00000070;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.descricao {
+    color: #a5a5c0;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+/* Campos */
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #d5d5e8;
+}
+
+.campo input {
+    width: 100%;
+    padding: 13px 15px;
+
+    background: #151526;
+    border: 1px solid #41415e;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 15px;
+
+    outline: none;
+
+    transition: border 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.campo input::placeholder {
+    color: #77778f;
+}
+
+.campo input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 12px #8b5cf655;
+    transform: scale(1.02);
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #7657ff, #a855f7);
+
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease,
+        filter 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+button span {
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+    box-shadow: 0 8px 20px #7657ff55;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Resultado */
+.resultado-container {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.resultado {
+    color: #a5a5c0;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 14px;
+
+    background: #151526;
+    border-radius: 10px;
+    border: 1px solid #383853;
+}
+
+/* Classes adicionadas pelo JavaScript */
+.resultado.sucesso {
+    color: #6ee7a0;
+    border-color: #22c55e;
+    animation: destacar 0.5s ease;
+}
+
+.resultado.recuperacao {
+    color: #facc15;
+    border-color: #eab308;
+    animation: destacar 0.5s ease;
+}
+
+.resultado.reprovado {
+    color: #fb7185;
+    border-color: #ef4444;
+    animation: destacar 0.5s ease;
+}
+
+.resultado.erro {
+    color: #fb7185;
+    border-color: #ef4444;
+    animation: tremer 0.3s ease;
+}
+
+.finalizacao {
+    color: #77778f;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #77778f;
+    font-size: 12px;
+}
+
+/* Animações */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes destacar {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes tremer {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .card {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
